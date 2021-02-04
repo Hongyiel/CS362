@@ -1,3 +1,4 @@
+
 #This is for CS362 OSU Hongyiel Suh
 # problem  1
 # find cube
@@ -7,13 +8,9 @@ def find_cube(user_input):
 
 # get input by user
 def main():
-    try:
-        user_input = int(input("Please type what number do you want to expect: "))
-        get_cube = find_cube(user_input)
-        print(get_cube)
-    except:
-        print ("This is not a number")
+    get_cube = find_cube(user_input)
+    print(get_cube)
 
 # main
-
-main()
+# if __name__ == '__main__':
+#     main()
