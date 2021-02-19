@@ -1,7 +1,32 @@
 # py: |
 #   print ("Hello, World!")
-title: My Tests
+
+#######
+# title: Hongyiel Intro
+# tests:
+# - py: |
+#     print ("Hi! my name is Hongyiel")
+# - sh: echo Hi, my name is Hongyiel Suh!
+
+title: Python tests
 tests:
-- py: |
-    print ("Hello, World!")
-- sh: echo Hello, World!
+- py: siriya.py
+- py: &sum |
+    # Sum of two numbers
+    import sys
+    a = float(sys.stdin.readline())
+    b = float(sys.stdin.readline())
+    c = a+b
+    sys.stdout.write("%s\n" % c)
+  stdin: |
+    2.94
+    9.82
+- py: *sum
+  stdin: |
+    1.22
+    -4.22
+- py: *sum
+  stdin: |
+    one
+    three
+  except: ValueError
