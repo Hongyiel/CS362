@@ -1,0 +1,7 @@
+# py: |
+#   print ("Hello, World!")
+title: My Tests
+tests:
+- py: |
+    print ("Hello, World!")
+- sh: echo Hello, World!
