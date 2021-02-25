@@ -14,13 +14,10 @@ class TestCaseFibo(unittest.TestCase):
 class TestCaseFacto(unittest.TestCase):
     def test_case_fact1(self):
         self.assertEqual(fibonacci.Factorial(2),15)
-    def test_case_fact3(self):
-        self.assertIsNotNone(fibonacci.Factorial(12))
     def test_case_fact2(self):
-        self.assertTrue(fibonacci.Factorial(33))
-
-
-
+        self.assertIsNotNone(fibonacci.Factorial(12))
+    def test_case_fact3(self):
+        self.assertIsInstance(fibonacci.Factorial("e"), int)
 
 if __name__ == '__main__':
     unittest.main()
