@@ -15,7 +15,7 @@ def FizzBuzz(number):
                 return "Buzz"
         else:
             return number
-
+# arr
 array = []
 for number in range(1,101):
     array.append(FizzBuzz(number))
