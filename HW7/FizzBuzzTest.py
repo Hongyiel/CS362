@@ -8,11 +8,18 @@ class CustomTests(unittest.TestCase):
         self.assertTrue(array[2] == "Fizz")
         self.assertTrue(array[5] == "Fizz")
         self.assertTrue(array[8] == "Fizz")
-        #array got "Fizz" every #3 array
-    # def test_runs2(self):
-    #     pass
-    # def test_runs3(self):
-    #     #array got 19 "Buzz"
-    #     pass
+        #FizzBuzz --> check number print "Fizz" 3 6 9
+    def test_runs2(self):
+        self.assertTrue(array[4] == "Buzz")
+        self.assertTrue(array[9] == "Buzz")
+        self.assertTrue(array[19] == "Buzz")
+        #array check number print "Buzz" 5 10 20
+    def test_runs3(self):
+
+        self.assertTrue(array[14] == "FizzBuzz")
+        self.assertTrue(array[29] == "FizzBuzz")
+        self.assertTrue(array[44] == "FizzBuzz")
+        #array check number print "Buzz" 15 30 45
+
 if __name__ == '__main__':
     unittest.main()
